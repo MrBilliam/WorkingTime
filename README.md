@@ -31,3 +31,15 @@ for development (with debugging `-g`)
 ```
 clang++ -std=c++23 -Wall -Wextra -Wpedantic -g -o out/dev/work src/main.cpp
 ```
+
+## Testing
+WorkingTime use the Catch2 library to run testing.
+Catch2 v3
+
+To run tests the build and test scripts can be used:
+```
+cd tests
+configure.sh # configures a cmake project in out/tests/build
+build.sh
+test.sh
+```
